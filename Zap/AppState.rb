@@ -12,7 +12,7 @@ class AppState
     
     def refresh_applications
         path = File.join(Dir.home, "Library/Application Support/Pow/Hosts")
-        error = nil
+        error = Pointer.new :object
         sym_links = NSFileManager.defaultManager.contentsOfDirectoryAtPath(path, error:error)
         self.applications = sym_links.collect do |sl|
             applicaiton = RackApplication.new
@@ -22,6 +22,13 @@ class AppState
             applicaiton.directory = directory
             applicaiton
         end
+    end
+    
+    def linkDirectory(directory)
+        pow_dir = File.join(Dir.home, "Library/Application Support/Pow/Hosts")
+        link_name = File.basename(directory)
+        error = Pointer.new :object
+        NSFileManager.defaultManager.createSymbolicLinkAtPath(File.join(pow_dir, link_name), withDestinationPath:directory, error:error)
     end
     
     @@instance = self.new

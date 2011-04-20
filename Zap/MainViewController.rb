@@ -32,13 +32,17 @@ class MainViewController < NSViewController
     end
     
     def numberOfItemsInListView(listView)
-        AppState.instance.applications.count
+        AppState.instance.applications.count + 1
     end
     
     def listView(listView, viewAtIndex:index)
-        applicationListItemView = ApplicationListItemView.itemView
-        applicationListItemView.application = AppState.instance.applications[index]
-        applicationListItemView
+        if index == 0
+            ApplicationListHeaderView.headerView
+        else
+            applicationListItemView = ApplicationListItemView.itemView
+            applicationListItemView.application = AppState.instance.applications[index-1]
+            applicationListItemView
+        end
     end
 end
 

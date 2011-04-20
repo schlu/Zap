@@ -645,7 +645,6 @@ NSString * const JAListViewDraggingPasteboardType = @"JAListViewDraggingPasteboa
     NSMutableArray *views = [NSMutableArray arrayWithCapacity:numberOfViews];
     
     // fill the array with dummy values so that the data source can be called in parallel
-    NSLog(@"number of views: %d", numberOfViews);
     for(NSUInteger index = 0; index < numberOfViews; index++) {
         [views addObject:[NSNull null]];
     }

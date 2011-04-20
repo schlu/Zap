@@ -29,6 +29,8 @@
 		77D91A58135E85E000CDD4CC /* NSIndexPath+JAListViewExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE734135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.h */; };
 		77D91A59135E85E000CDD4CC /* NSIndexPath+JAListViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE735135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.m */; };
 		77D91A63135E877100CDD4CC /* ApplicationListItemView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77D91A62135E877100CDD4CC /* ApplicationListItemView.rb */; };
+		77D91A65135E995E00CDD4CC /* ApplicationListHeaderView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77D91A64135E995E00CDD4CC /* ApplicationListHeaderView.rb */; };
+		77D91A67135E99A700CDD4CC /* ApplicationListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77D91A66135E99A700CDD4CC /* ApplicationListHeaderView.xib */; };
 		77DBCADD135B9A8A00A8BB0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DBCADC135B9A8A00A8BB0E /* Cocoa.framework */; };
 		77DBCADF135B9A8A00A8BB0E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DBCADE135B9A8A00A8BB0E /* MacRuby.framework */; };
 		77DBCAE6135B9A8A00A8BB0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77DBCAE4135B9A8A00A8BB0E /* InfoPlist.strings */; };
@@ -48,6 +50,8 @@
 		77CD7F57135C6EE200A59E03 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		77CD7F5B135C702300A59E03 /* ApplicationListItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationListItemView.xib; sourceTree = "<group>"; };
 		77D91A62135E877100CDD4CC /* ApplicationListItemView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationListItemView.rb; sourceTree = "<group>"; };
+		77D91A64135E995E00CDD4CC /* ApplicationListHeaderView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationListHeaderView.rb; sourceTree = "<group>"; };
+		77D91A66135E99A700CDD4CC /* ApplicationListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationListHeaderView.xib; sourceTree = "<group>"; };
 		77DBCAD8135B9A8A00A8BB0E /* Zap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DBCADC135B9A8A00A8BB0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		77DBCADE135B9A8A00A8BB0E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -121,6 +125,8 @@
 			children = (
 				77CD7F5B135C702300A59E03 /* ApplicationListItemView.xib */,
 				77D91A62135E877100CDD4CC /* ApplicationListItemView.rb */,
+				77D91A64135E995E00CDD4CC /* ApplicationListHeaderView.rb */,
+				77D91A66135E99A700CDD4CC /* ApplicationListHeaderView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -324,6 +330,8 @@
 				77CD7F5C135C702300A59E03 /* ApplicationListItemView.xib in Resources */,
 				77BDB941135D4BC3009388DE /* jalist.bridgesupport in Resources */,
 				77D91A63135E877100CDD4CC /* ApplicationListItemView.rb in Resources */,
+				77D91A65135E995E00CDD4CC /* ApplicationListHeaderView.rb in Resources */,
+				77D91A67135E99A700CDD4CC /* ApplicationListHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
