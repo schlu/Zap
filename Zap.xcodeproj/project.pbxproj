@@ -12,14 +12,23 @@
 		779D33AE135BDFBC00FE515D /* AppState.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33AD135BDFBC00FE515D /* AppState.rb */; };
 		779D33B0135BE03700FE515D /* RackApplication.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33AF135BE03700FE515D /* RackApplication.rb */; };
 		779D33B3135BEB0600FE515D /* NSViewMixin.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33B2135BEB0600FE515D /* NSViewMixin.rb */; };
-		779D33B6135BEE0C00FE515D /* FlippedView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33B5135BEE0C00FE515D /* FlippedView.rb */; };
-		779D33B8135BEE9E00FE515D /* FlippedScrollView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33B7135BEE9E00FE515D /* FlippedScrollView.rb */; };
-		77BDB93B135D4A15009388DE /* jalist-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77BDB93A135D4A15009388DE /* jalist-Info.plist */; };
-		77BDB93D135D4A50009388DE /* jalist-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 77BDB93C135D4A50009388DE /* jalist-Prefix.pch */; };
 		77BDB941135D4BC3009388DE /* jalist.bridgesupport in Resources */ = {isa = PBXBuildFile; fileRef = 77BDB940135D4BC3009388DE /* jalist.bridgesupport */; };
 		77CD7F58135C6EE200A59E03 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77CD7F57135C6EE200A59E03 /* Quartz.framework */; };
-		77CD7F5A135C6FDC00A59E03 /* ApplicationViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77CD7F59135C6FDB00A59E03 /* ApplicationViewController.rb */; };
-		77CD7F5C135C702300A59E03 /* ApplicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CD7F5B135C702300A59E03 /* ApplicationViewController.xib */; };
+		77CD7F5C135C702300A59E03 /* ApplicationListItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77CD7F5B135C702300A59E03 /* ApplicationListItemView.xib */; };
+		77D91A4D135E85E000CDD4CC /* JAEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE729135D43A300CDA456 /* JAEdgeInsets.h */; };
+		77D91A4E135E85E000CDD4CC /* JAListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72A135D43A300CDA456 /* JAListView.h */; };
+		77D91A4F135E85E000CDD4CC /* JAListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE72B135D43A300CDA456 /* JAListView.m */; };
+		77D91A50135E85E000CDD4CC /* JAListViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72C135D43A300CDA456 /* JAListViewItem.h */; };
+		77D91A51135E85E000CDD4CC /* JAListViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE72D135D43A300CDA456 /* JAListViewItem.m */; };
+		77D91A52135E85E000CDD4CC /* JAObjectListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72E135D43A300CDA456 /* JAObjectListView.h */; };
+		77D91A53135E85E000CDD4CC /* JAObjectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE72F135D43A300CDA456 /* JAObjectListView.m */; };
+		77D91A54135E85E000CDD4CC /* JAObjectListViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE730135D43A300CDA456 /* JAObjectListViewItem.h */; };
+		77D91A55135E85E000CDD4CC /* JAObjectListViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE731135D43A300CDA456 /* JAObjectListViewItem.m */; };
+		77D91A56135E85E000CDD4CC /* JASectionedListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE732135D43A300CDA456 /* JASectionedListView.h */; };
+		77D91A57135E85E000CDD4CC /* JASectionedListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE733135D43A300CDA456 /* JASectionedListView.m */; };
+		77D91A58135E85E000CDD4CC /* NSIndexPath+JAListViewExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE734135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.h */; };
+		77D91A59135E85E000CDD4CC /* NSIndexPath+JAListViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE735135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.m */; };
+		77D91A63135E877100CDD4CC /* ApplicationListItemView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77D91A62135E877100CDD4CC /* ApplicationListItemView.rb */; };
 		77DBCADD135B9A8A00A8BB0E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DBCADC135B9A8A00A8BB0E /* Cocoa.framework */; };
 		77DBCADF135B9A8A00A8BB0E /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DBCADE135B9A8A00A8BB0E /* MacRuby.framework */; };
 		77DBCAE6135B9A8A00A8BB0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77DBCAE4135B9A8A00A8BB0E /* InfoPlist.strings */; };
@@ -27,29 +36,6 @@
 		77DBCAED135B9A8A00A8BB0E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77DBCAEB135B9A8A00A8BB0E /* MainMenu.xib */; };
 		77DBCAF0135B9A8A00A8BB0E /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77DBCAEF135B9A8A00A8BB0E /* rb_main.rb */; };
 		77DBCAF2135B9A8A00A8BB0E /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77DBCAF1135B9A8A00A8BB0E /* AppDelegate.rb */; };
-		77EBE719135D434300CDA456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DBCADC135B9A8A00A8BB0E /* Cocoa.framework */; };
-		77EBE752135D440D00CDA456 /* JAListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE72B135D43A300CDA456 /* JAListView.m */; };
-		77EBE754135D440D00CDA456 /* JAListViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE72D135D43A300CDA456 /* JAListViewItem.m */; };
-		77EBE756135D440D00CDA456 /* JAObjectListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE72F135D43A300CDA456 /* JAObjectListView.m */; };
-		77EBE758135D440D00CDA456 /* JAObjectListViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE731135D43A300CDA456 /* JAObjectListViewItem.m */; };
-		77EBE75A135D440D00CDA456 /* JASectionedListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE733135D43A300CDA456 /* JASectionedListView.m */; };
-		77EBE75C135D440D00CDA456 /* NSIndexPath+JAListViewExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EBE735135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.m */; };
-		77EBE786135D44D700CDA456 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EBE785135D44D700CDA456 /* QuartzCore.framework */; };
-		77EBE789135D471F00CDA456 /* jalist.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77EBE788135D471F00CDA456 /* jalist.bundle */; };
-		77EBE78B135D476800CDA456 /* JAEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE729135D43A300CDA456 /* JAEdgeInsets.h */; };
-		77EBE78C135D476800CDA456 /* JAListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72A135D43A300CDA456 /* JAListView.h */; };
-		77EBE78D135D476800CDA456 /* JAListViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72C135D43A300CDA456 /* JAListViewItem.h */; };
-		77EBE78E135D476800CDA456 /* JAObjectListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72E135D43A300CDA456 /* JAObjectListView.h */; };
-		77EBE78F135D476800CDA456 /* JAObjectListViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE730135D43A300CDA456 /* JAObjectListViewItem.h */; };
-		77EBE790135D476800CDA456 /* JASectionedListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE732135D43A300CDA456 /* JASectionedListView.h */; };
-		77EBE791135D476800CDA456 /* NSIndexPath+JAListViewExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE734135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.h */; };
-		77EBE792135D47AA00CDA456 /* JAEdgeInsets.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE729135D43A300CDA456 /* JAEdgeInsets.h */; };
-		77EBE793135D47B400CDA456 /* JAListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72A135D43A300CDA456 /* JAListView.h */; };
-		77EBE794135D47B400CDA456 /* JAListViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72C135D43A300CDA456 /* JAListViewItem.h */; };
-		77EBE795135D47B400CDA456 /* JAObjectListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE72E135D43A300CDA456 /* JAObjectListView.h */; };
-		77EBE796135D47B400CDA456 /* JAObjectListViewItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE730135D43A300CDA456 /* JAObjectListViewItem.h */; };
-		77EBE797135D47B400CDA456 /* JASectionedListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE732135D43A300CDA456 /* JASectionedListView.h */; };
-		77EBE798135D47B400CDA456 /* NSIndexPath+JAListViewExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77EBE734135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,14 +44,10 @@
 		779D33AD135BDFBC00FE515D /* AppState.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppState.rb; sourceTree = "<group>"; };
 		779D33AF135BE03700FE515D /* RackApplication.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = RackApplication.rb; sourceTree = "<group>"; };
 		779D33B2135BEB0600FE515D /* NSViewMixin.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NSViewMixin.rb; sourceTree = "<group>"; };
-		779D33B5135BEE0C00FE515D /* FlippedView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FlippedView.rb; sourceTree = "<group>"; };
-		779D33B7135BEE9E00FE515D /* FlippedScrollView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FlippedScrollView.rb; sourceTree = "<group>"; };
-		77BDB93A135D4A15009388DE /* jalist-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "jalist-Info.plist"; sourceTree = "<group>"; };
-		77BDB93C135D4A50009388DE /* jalist-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "jalist-Prefix.pch"; sourceTree = "<group>"; };
 		77BDB940135D4BC3009388DE /* jalist.bridgesupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = jalist.bridgesupport; sourceTree = "<group>"; };
 		77CD7F57135C6EE200A59E03 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
-		77CD7F59135C6FDB00A59E03 /* ApplicationViewController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationViewController.rb; sourceTree = "<group>"; };
-		77CD7F5B135C702300A59E03 /* ApplicationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationViewController.xib; sourceTree = "<group>"; };
+		77CD7F5B135C702300A59E03 /* ApplicationListItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplicationListItemView.xib; sourceTree = "<group>"; };
+		77D91A62135E877100CDD4CC /* ApplicationListItemView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationListItemView.rb; sourceTree = "<group>"; };
 		77DBCAD8135B9A8A00A8BB0E /* Zap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DBCADC135B9A8A00A8BB0E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		77DBCADE135B9A8A00A8BB0E /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = System/Library/Frameworks/MacRuby.framework; sourceTree = SDKROOT; };
@@ -76,7 +58,6 @@
 		77DBCAEC135B9A8A00A8BB0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		77DBCAEF135B9A8A00A8BB0E /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		77DBCAF1135B9A8A00A8BB0E /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
-		77EBE718135D434300CDA456 /* jalist.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jalist.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EBE71B135D434300CDA456 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		77EBE71C135D434300CDA456 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		77EBE71D135D434300CDA456 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,8 +74,6 @@
 		77EBE733135D43A300CDA456 /* JASectionedListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASectionedListView.m; sourceTree = "<group>"; };
 		77EBE734135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+JAListViewExtensions.h"; sourceTree = "<group>"; };
 		77EBE735135D43A300CDA456 /* NSIndexPath+JAListViewExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+JAListViewExtensions.m"; sourceTree = "<group>"; };
-		77EBE785135D44D700CDA456 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		77EBE788135D471F00CDA456 /* jalist.bundle */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.bundle"; path = jalist.bundle; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,23 +87,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77EBE715135D434300CDA456 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77EBE786135D44D700CDA456 /* QuartzCore.framework in Frameworks */,
-				77EBE719135D434300CDA456 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		779D33A0135B9E1A00FE515D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				77CD7F59135C6FDB00A59E03 /* ApplicationViewController.rb */,
-				77CD7F5B135C702300A59E03 /* ApplicationViewController.xib */,
 				779D33A5135BA5C100FE515D /* MainViewController.rb */,
 				779D33A7135BA6CA00FE515D /* MainViewController.xib */,
 			);
@@ -151,8 +119,8 @@
 		779D33B4135BEDE500FE515D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				779D33B5135BEE0C00FE515D /* FlippedView.rb */,
-				779D33B7135BEE9E00FE515D /* FlippedScrollView.rb */,
+				77CD7F5B135C702300A59E03 /* ApplicationListItemView.xib */,
+				77D91A62135E877100CDD4CC /* ApplicationListItemView.rb */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -160,7 +128,6 @@
 		77DBCACD135B9A8A00A8BB0E = {
 			isa = PBXGroup;
 			children = (
-				77EBE785135D44D700CDA456 /* QuartzCore.framework */,
 				77DBCAE1135B9A8A00A8BB0E /* Zap */,
 				77DBCADB135B9A8A00A8BB0E /* Frameworks */,
 				77DBCAD9135B9A8A00A8BB0E /* Products */,
@@ -171,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				77DBCAD8135B9A8A00A8BB0E /* Zap.app */,
-				77EBE718135D434300CDA456 /* jalist.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,7 +192,6 @@
 		77DBCAEE135B9A8A00A8BB0E /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				77EBE788135D471F00CDA456 /* jalist.bundle */,
 				77DBCAEF135B9A8A00A8BB0E /* rb_main.rb */,
 			);
 			name = "Other Sources";
@@ -245,8 +210,6 @@
 		77EBE728135D43A300CDA456 /* jalist */ = {
 			isa = PBXGroup;
 			children = (
-				77BDB93C135D4A50009388DE /* jalist-Prefix.pch */,
-				77BDB93A135D4A15009388DE /* jalist-Info.plist */,
 				77EBE729135D43A300CDA456 /* JAEdgeInsets.h */,
 				77EBE72A135D43A300CDA456 /* JAListView.h */,
 				77EBE72B135D43A300CDA456 /* JAListView.m */,
@@ -271,28 +234,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77EBE792135D47AA00CDA456 /* JAEdgeInsets.h in Headers */,
-				77EBE793135D47B400CDA456 /* JAListView.h in Headers */,
-				77EBE794135D47B400CDA456 /* JAListViewItem.h in Headers */,
-				77EBE795135D47B400CDA456 /* JAObjectListView.h in Headers */,
-				77EBE796135D47B400CDA456 /* JAObjectListViewItem.h in Headers */,
-				77EBE797135D47B400CDA456 /* JASectionedListView.h in Headers */,
-				77EBE798135D47B400CDA456 /* NSIndexPath+JAListViewExtensions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77EBE78A135D474C00CDA456 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77EBE78B135D476800CDA456 /* JAEdgeInsets.h in Headers */,
-				77EBE78C135D476800CDA456 /* JAListView.h in Headers */,
-				77EBE78D135D476800CDA456 /* JAListViewItem.h in Headers */,
-				77EBE78E135D476800CDA456 /* JAObjectListView.h in Headers */,
-				77EBE78F135D476800CDA456 /* JAObjectListViewItem.h in Headers */,
-				77EBE790135D476800CDA456 /* JASectionedListView.h in Headers */,
-				77EBE791135D476800CDA456 /* NSIndexPath+JAListViewExtensions.h in Headers */,
-				77BDB93D135D4A50009388DE /* jalist-Prefix.pch in Headers */,
+				77D91A4D135E85E000CDD4CC /* JAEdgeInsets.h in Headers */,
+				77D91A4E135E85E000CDD4CC /* JAListView.h in Headers */,
+				77D91A50135E85E000CDD4CC /* JAListViewItem.h in Headers */,
+				77D91A52135E85E000CDD4CC /* JAObjectListView.h in Headers */,
+				77D91A54135E85E000CDD4CC /* JAObjectListViewItem.h in Headers */,
+				77D91A56135E85E000CDD4CC /* JASectionedListView.h in Headers */,
+				77D91A58135E85E000CDD4CC /* NSIndexPath+JAListViewExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,25 +281,6 @@
 			productReference = 77DBCAD8135B9A8A00A8BB0E /* Zap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		77EBE717135D434300CDA456 /* jalist */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 77EBE725135D434300CDA456 /* Build configuration list for PBXNativeTarget "jalist" */;
-			buildPhases = (
-				77EBE714135D434300CDA456 /* Sources */,
-				77EBE715135D434300CDA456 /* Frameworks */,
-				77EBE716135D434300CDA456 /* Resources */,
-				77EBE78A135D474C00CDA456 /* Headers */,
-				77EBE787135D468F00CDA456 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = jalist;
-			productName = jalist;
-			productReference = 77EBE718135D434300CDA456 /* jalist.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -374,7 +303,6 @@
 			targets = (
 				77DBCAD7135B9A8A00A8BB0E /* Zap */,
 				77DBCAE0135B9A8A00A8BB0E /* Deployment */,
-				77EBE717135D434300CDA456 /* jalist */,
 			);
 		};
 /* End PBXProject section */
@@ -393,40 +321,13 @@
 				779D33AE135BDFBC00FE515D /* AppState.rb in Resources */,
 				779D33B0135BE03700FE515D /* RackApplication.rb in Resources */,
 				779D33B3135BEB0600FE515D /* NSViewMixin.rb in Resources */,
-				779D33B6135BEE0C00FE515D /* FlippedView.rb in Resources */,
-				779D33B8135BEE9E00FE515D /* FlippedScrollView.rb in Resources */,
-				77CD7F5A135C6FDC00A59E03 /* ApplicationViewController.rb in Resources */,
-				77CD7F5C135C702300A59E03 /* ApplicationViewController.xib in Resources */,
-				77EBE789135D471F00CDA456 /* jalist.bundle in Resources */,
-				77BDB93B135D4A15009388DE /* jalist-Info.plist in Resources */,
+				77CD7F5C135C702300A59E03 /* ApplicationListItemView.xib in Resources */,
 				77BDB941135D4BC3009388DE /* jalist.bridgesupport in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77EBE716135D434300CDA456 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				77D91A63135E877100CDD4CC /* ApplicationListItemView.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		77EBE787135D468F00CDA456 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cp -v \"${TARGET_BUILD_DIR}/${EXECUTABLE_PATH}\" \\\n\"${SOURCE_ROOT}/${FULL_PRODUCT_NAME}\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77DBCAD4135B9A8A00A8BB0E /* Sources */ = {
@@ -434,19 +335,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				77DBCAE9135B9A8A00A8BB0E /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		77EBE714135D434300CDA456 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77EBE752135D440D00CDA456 /* JAListView.m in Sources */,
-				77EBE754135D440D00CDA456 /* JAListViewItem.m in Sources */,
-				77EBE756135D440D00CDA456 /* JAObjectListView.m in Sources */,
-				77EBE758135D440D00CDA456 /* JAObjectListViewItem.m in Sources */,
-				77EBE75A135D440D00CDA456 /* JASectionedListView.m in Sources */,
-				77EBE75C135D440D00CDA456 /* NSIndexPath+JAListViewExtensions.m in Sources */,
+				77D91A4F135E85E000CDD4CC /* JAListView.m in Sources */,
+				77D91A51135E85E000CDD4CC /* JAListViewItem.m in Sources */,
+				77D91A53135E85E000CDD4CC /* JAObjectListView.m in Sources */,
+				77D91A55135E85E000CDD4CC /* JAObjectListViewItem.m in Sources */,
+				77D91A57135E85E000CDD4CC /* JASectionedListView.m in Sources */,
+				77D91A59135E85E000CDD4CC /* NSIndexPath+JAListViewExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,42 +450,6 @@
 			};
 			name = Release;
 		};
-		77EBE726135D434300CDA456 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COPY_PHASE_STRIP = NO;
-				EXECUTABLE_EXTENSION = bundle;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Zap/jalist/jalist-Prefix.pch";
-				INFOPLIST_FILE = "Zap/jalist/jalist-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		77EBE727135D434300CDA456 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				EXECUTABLE_EXTENSION = bundle;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Zap/jalist/jalist-Prefix.pch";
-				INFOPLIST_FILE = "Zap/jalist/jalist-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,15 +476,6 @@
 			buildConfigurations = (
 				77DBCAF9135B9A8A00A8BB0E /* Debug */,
 				77DBCAFA135B9A8A00A8BB0E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		77EBE725135D434300CDA456 /* Build configuration list for PBXNativeTarget "jalist" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				77EBE726135D434300CDA456 /* Debug */,
-				77EBE727135D434300CDA456 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
