@@ -29,10 +29,12 @@ class AppState
         link_name = File.basename(directory)
         error = Pointer.new :object
         NSFileManager.defaultManager.createSymbolicLinkAtPath(File.join(@@pow_dir, link_name), withDestinationPath:directory, error:error)
+        NSApplication.sharedApplication.delegate.reload_application
     end
     
     def delete_link_name(link_name)
         File.delete(File.join(@@pow_dir, link_name))
+        NSApplication.sharedApplication.delegate.reload_application
     end
     
     @@instance = self.new

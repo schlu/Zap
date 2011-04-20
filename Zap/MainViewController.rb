@@ -18,17 +18,13 @@ class MainViewController < NSViewController
     
     def loadView
         super
-        AppState.instance.refresh_applications
+        self.setup_links
         self.listView.dataSource = self
     end
     
-    def reloadLinks
-        
-        self.application_controllers = AppState.instance.applications.collect do |a|
-            application_controller = ApplicationViewController.new
-            application_controller.application = a
-            application_controller
-        end
+    def setup_links
+        AppState.instance.refresh_applications
+        listView.reloadData
     end
     
     def numberOfItemsInListView(listView)

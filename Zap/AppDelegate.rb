@@ -14,5 +14,9 @@ class AppDelegate
         @main_view_controller.view.frame = window.contentView.frame
         window.contentView.addSubview @main_view_controller.view
     end
+    
+    def reload_application
+        @main_view_controller.setup_links
+    end
 end
 
