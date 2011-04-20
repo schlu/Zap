@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<constant name='JAListViewDraggingPasteboardType' type='@'/>
+<enum name='JAListViewPositionBottom' value='8'/>
+<enum name='JAListViewPositionMiddle' value='4'/>
+<enum name='JAListViewPositionNone' value='0'/>
+<enum name='JAListViewPositionTop' value='2'/>
+<enum name='JASectionedListViewHeaderIndex' value='-1'/>
+<function name='JAEdgeInsetsMake' inline='true'>
+<arg type='f'/>
+<arg type='f'/>
+<arg type='f'/>
+<arg type='f'/>
+<retval type='{?=ffff}'/>
+</function>
+<class name='JAListView'>
+<method selector='allowNoSelection'>
+<retval type='B'/>
+</method>
+<method selector='canCallDataSourceInParallel'>
+<retval type='B'/>
+</method>
+<method selector='conditionallyUseLayerBacking'>
+<retval type='B'/>
+</method>
+<method selector='containsViewItem:'>
+<retval type='B'/>
+</method>
+<method selector='isViewVisible:'>
+<retval type='B'/>
+</method>
+<method selector='reloadDataAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='reloadLayoutAnimated:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setAllowNoSelection:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setCanCallDataSourceInParallel:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setConditionallyUseLayerBacking:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='JAListViewItem'>
+<method selector='ignoreInListViewLayout'>
+<retval type='B'/>
+</method>
+<method selector='ignoresListViewPadding'>
+<retval type='B'/>
+</method>
+<method selector='isHighlighted'>
+<retval type='B'/>
+</method>
+<method selector='isSelected'>
+<retval type='B'/>
+</method>
+<method selector='setHighlighted:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setIgnoreInListViewLayout:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setIgnoresListViewPadding:'>
+<arg type='B' index='0'/>
+</method>
+<method selector='setSelected:'>
+<arg type='B' index='0'/>
+</method>
+</class>
+<class name='JASectionedListView'>
+<method selector='isViewSectionHeaderView:'>
+<retval type='B'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='listView:shouldAcceptViews:location:'>
+<retval type='B'/>
+</method>
+<method selector='listView:shouldDragView:'>
+<retval type='B'/>
+</method>
+<method selector='listView:shouldSelectView:'>
+<retval type='B'/>
+</method>
+</class>
+<informal_protocol name='NSObject'>
+<method type='v16@0:4@8@12' selector='listView:didDeselectView:'/>
+<method type='v16@0:4@8@12' selector='listView:didEndDraggingView:'/>
+<method type='v16@0:4@8@12' selector='listView:didRemoveView:'/>
+<method type='v16@0:4@8@12' selector='listView:didSelectView:'/>
+<method type='v16@0:4@8@12' selector='listView:didStartDraggingView:'/>
+<method type='v24@0:4@8@12{_NSPoint=ff}16' selector='listView:dragEnded:location:'/>
+<method type='v24@0:4@8@12{_NSPoint=ff}16' selector='listView:dragEntered:location:'/>
+<method type='v24@0:4@8@12{_NSPoint=ff}16' selector='listView:dragExited:location:'/>
+<method type='v24@0:4@8@12{_NSPoint=ff}16' selector='listView:dragUpdated:location:'/>
+<method type='v20@0:4@8@12@16' selector='listView:mouseDownOnView:withEvent:'/>
+<method type='v20@0:4@8@12@16' selector='listView:mouseUpOnView:withEvent:'/>
+<method type='I16@0:4@8I12' selector='listView:numberOfViewsInSection:'/>
+<method type='v20@0:4@8@12@16' selector='listView:rightMouseDownOnView:withEvent:'/>
+<method type='@16@0:4@8I12' selector='listView:sectionHeaderViewForSection:'/>
+<method type='B24@0:4@8@12{_NSPoint=ff}16' selector='listView:shouldAcceptViews:location:'/>
+<method type='B16@0:4@8@12' selector='listView:shouldDragView:'/>
+<method type='B16@0:4@8@12' selector='listView:shouldSelectView:'/>
+<method type='@16@0:4@8I12' selector='listView:viewAtIndex:'/>
+<method type='@20@0:4@8I12I16' selector='listView:viewForSection:index:'/>
+<method type='v16@0:4@8@12' selector='listView:willSelectView:'/>
+<method type='I12@0:4@8' selector='numberOfItemsInListView:'/>
+<method type='I12@0:4@8' selector='numberOfSectionsInListView:'/>
+</informal_protocol>
+</signatures>
