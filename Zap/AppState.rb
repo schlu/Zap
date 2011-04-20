@@ -10,25 +10,29 @@
 class AppState
     attr_accessor :applications
     
+    @@pow_dir = File.join(Dir.home, "Library/Application Support/Pow/Hosts")
+    
     def refresh_applications
-        path = File.join(Dir.home, "Library/Application Support/Pow/Hosts")
         error = Pointer.new :object
-        sym_links = NSFileManager.defaultManager.contentsOfDirectoryAtPath(path, error:error)
+        sym_links = NSFileManager.defaultManager.contentsOfDirectoryAtPath(@@pow_dir, error:error)
         self.applications = sym_links.collect do |sl|
             applicaiton = RackApplication.new
             applicaiton.symlink = sl
-            directory = NSFileManager.defaultManager.destinationOfSymbolicLinkAtPath(File.join(path, sl), error:error)
+            directory = NSFileManager.defaultManager.destinationOfSymbolicLinkAtPath(File.join(@@pow_dir, sl), error:error)
             directory = directory.gsub(Dir.home, "~")
             applicaiton.directory = directory
             applicaiton
         end
     end
     
-    def linkDirectory(directory)
-        pow_dir = File.join(Dir.home, "Library/Application Support/Pow/Hosts")
+    def link_directory(directory)
         link_name = File.basename(directory)
         error = Pointer.new :object
-        NSFileManager.defaultManager.createSymbolicLinkAtPath(File.join(pow_dir, link_name), withDestinationPath:directory, error:error)
+        NSFileManager.defaultManager.createSymbolicLinkAtPath(File.join(@@pow_dir, link_name), withDestinationPath:directory, error:error)
+    end
+    
+    def delete_link_name(link_name)
+        File.delete(File.join(@@pow_dir, link_name))
     end
     
     @@instance = self.new

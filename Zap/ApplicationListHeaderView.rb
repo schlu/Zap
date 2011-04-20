@@ -24,7 +24,7 @@ class ApplicationListHeaderView < JAObjectListViewItem
     def drawRect(rect)
         super
         drawBackground
-        linkedApplications.stringValue = "#{AppState.instance.applications.count} linked applications"
+        linkedApplications.stringValue = "#{AppState.instance.applications.count} applications"
     end
 
     def gradient
@@ -54,7 +54,7 @@ class ApplicationListHeaderView < JAObjectListViewItem
         if dialog.runModalForDirectory(nil, file:nil) == NSOKButton
             # if we had a allowed for the selection of multiple items
             # we would have want to loop through the selection
-            AppState.instance.linkDirectory dialog.filenames.first
+            AppState.instance.link_directory dialog.filenames.first
         end
     end
 end

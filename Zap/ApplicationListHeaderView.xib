@@ -49,7 +49,7 @@
 					<object class="NSButton" id="616474841">
 						<reference key="NSNextResponder" ref="364249477"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{179, 13}, {134, 32}}</string>
+						<string key="NSFrame">{{144, 15}, {66, 32}}</string>
 						<reference key="NSSuperview" ref="364249477"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>
@@ -57,7 +57,7 @@
 						<object class="NSButtonCell" key="NSCell" id="44623640">
 							<int key="NSCellFlags">67239424</int>
 							<int key="NSCellFlags2">134217728</int>
-							<string key="NSContents">Link Another</string>
+							<string key="NSContents">Add</string>
 							<object class="NSFont" key="NSSupport" id="459515967">
 								<string key="NSName">LucidaGrande</string>
 								<double key="NSSize">13</double>
@@ -75,14 +75,15 @@
 					<object class="NSTextField" id="246485272">
 						<reference key="NSNextResponder" ref="364249477"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{17, 26}, {163, 17}}</string>
+						<string key="NSFrame">{{17, 26}, {128, 17}}</string>
 						<reference key="NSSuperview" ref="364249477"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="616474841"/>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSTextFieldCell" key="NSCell" id="584168502">
 							<int key="NSCellFlags">68288064</int>
 							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents">10 Linked Applications</string>
+							<string key="NSContents">10 Applications</string>
 							<reference key="NSSupport" ref="459515967"/>
 							<reference key="NSControlView" ref="246485272"/>
 							<object class="NSColor" key="NSBackgroundColor">
@@ -109,7 +110,7 @@
 				<string key="NSFrameSize">{480, 63}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="616474841"/>
+				<reference key="NSNextKeyView" ref="246485272"/>
 				<int key="NSViewLayerContentsRedrawPolicy">2</int>
 				<string key="NSClassName">ApplicationListHeaderView</string>
 			</object>

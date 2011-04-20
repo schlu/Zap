@@ -49,4 +49,11 @@ class ApplicationListItemView < JAObjectListViewItem
     def reveal_in_finder(sender)
         NSWorkspace.sharedWorkspace.selectFile(application.directory, inFileViewerRootedAtPath:nil)
     end
+
+    def remove(sender)
+        alert = NSAlert.alertWithMessageText("This will permanently remove #{application.symlink} from pow", defaultButton:"Continue", alternateButton:"Cancel", otherButton:nil, informativeTextWithFormat:"")
+        if alert.runModal == NSAlertDefaultReturn
+            AppState.instance.delete_link_name application.symlink
+        end
+    end
 end
