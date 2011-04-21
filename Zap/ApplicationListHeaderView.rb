@@ -57,4 +57,8 @@ class ApplicationListHeaderView < JAObjectListViewItem
             AppState.instance.link_directory dialog.filenames.first
         end
     end
+
+    def setSelected(arg)
+        @selected = arg
+    end
 end

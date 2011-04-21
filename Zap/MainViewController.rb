@@ -18,8 +18,17 @@ class MainViewController < NSViewController
     
     def loadView
         super
-        self.setup_links
-        self.listView.dataSource = self
+        if AppState.instance.pow_installed?
+            self.setup_links
+            self.listView.dataSource = self
+        else
+            alert = NSAlert.alertWithMessageText("Pow not installed", defaultButton:"Continue", alternateButton:"Cancel", otherButton:nil, informativeTextWithFormat:"Zap requires Pow. Go to http://pow.cx for instructions")
+            if alert.runModal == NSAlertDefaultReturn
+                url = NSURL.URLWithString("http://pow.cx/")
+                NSWorkspace.sharedWorkspace.openURL(url)
+            end
+            NSApplication.sharedApplication.terminate(self)
+        end
     end
     
     def setup_links

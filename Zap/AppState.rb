@@ -12,6 +12,10 @@ class AppState
     
     @@pow_dir = File.join(Dir.home, "Library/Application Support/Pow/Hosts")
     
+    def pow_installed?
+        File.exists?(File.join(Dir.home, "Library/Application Support/Pow"))
+    end
+    
     def refresh_applications
         error = Pointer.new :object
         sym_links = NSFileManager.defaultManager.contentsOfDirectoryAtPath(@@pow_dir, error:error)

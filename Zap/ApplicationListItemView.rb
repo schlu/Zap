@@ -56,4 +56,9 @@ class ApplicationListItemView < JAObjectListViewItem
             AppState.instance.delete_link_name application.symlink
         end
     end
+
+    def open(sender)
+        url = NSURL.URLWithString("http://#{application.symlink}.dev/")
+        NSWorkspace.sharedWorkspace.openURL(url)
+    end
 end

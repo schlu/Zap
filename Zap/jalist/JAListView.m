@@ -307,7 +307,6 @@ NSString * const JAListViewDraggingPasteboardType = @"JAListViewDraggingPasteboa
                 }
             }
             
-            view.selected = YES;
             [self.currentlySelectedViews addObject:view];
             [self.window makeFirstResponder:view];
             
