@@ -8,7 +8,7 @@
 
 
 class ApplicationListItemView < JAObjectListViewItem
-    attr_accessor :gradient, :application, :symlink, :directory, :selected
+    attr_accessor :gradient, :application, :symlink, :directory, :url, :selected
     
     @@nib = nil
     
@@ -25,8 +25,11 @@ class ApplicationListItemView < JAObjectListViewItem
     def drawRect(rect)
         super
         drawBackground
+        directory.clickDelegate = self
+        url.clickDelegate = self
         symlink.stringValue = application.symlink
         directory.stringValue = application.directory
+        url.stringValue = "http://#{application.symlink}.dev/"
     end
 
     def gradient
@@ -46,7 +49,7 @@ class ApplicationListItemView < JAObjectListViewItem
         NSRectFill(NSMakeRect(0.0, self.bounds.size.height - 1.0, self.bounds.size.width, 1.0));
     end
 
-    def reveal_in_finder(sender)
+    def reveal_in_finder
         NSWorkspace.sharedWorkspace.selectFile(application.directory, inFileViewerRootedAtPath:nil)
     end
 
@@ -57,8 +60,16 @@ class ApplicationListItemView < JAObjectListViewItem
         end
     end
 
-    def open(sender)
+    def open
         url = NSURL.URLWithString("http://#{application.symlink}.dev/")
         NSWorkspace.sharedWorkspace.openURL(url)
+    end
+
+    def labelClicked(sender)
+        if sender == directory
+            reveal_in_finder
+        else
+            open
+        end
     end
 end

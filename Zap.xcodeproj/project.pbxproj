@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77620E281360621600D40692 /* ClickableLabel.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77620E271360621600D40692 /* ClickableLabel.rb */; };
 		779D33A6135BA5C100FE515D /* MainViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33A5135BA5C100FE515D /* MainViewController.rb */; };
 		779D33A8135BA6CA00FE515D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779D33A7135BA6CA00FE515D /* MainViewController.xib */; };
 		779D33AE135BDFBC00FE515D /* AppState.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33AD135BDFBC00FE515D /* AppState.rb */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77620E271360621600D40692 /* ClickableLabel.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ClickableLabel.rb; sourceTree = "<group>"; };
 		779D33A5135BA5C100FE515D /* MainViewController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = MainViewController.rb; sourceTree = "<group>"; };
 		779D33A7135BA6CA00FE515D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		779D33AD135BDFBC00FE515D /* AppState.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppState.rb; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				77D91A62135E877100CDD4CC /* ApplicationListItemView.rb */,
 				77D91A64135E995E00CDD4CC /* ApplicationListHeaderView.rb */,
 				77D91A66135E99A700CDD4CC /* ApplicationListHeaderView.xib */,
+				77620E271360621600D40692 /* ClickableLabel.rb */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				77D91A63135E877100CDD4CC /* ApplicationListItemView.rb in Resources */,
 				77D91A65135E995E00CDD4CC /* ApplicationListHeaderView.rb in Resources */,
 				77D91A67135E99A700CDD4CC /* ApplicationListHeaderView.xib in Resources */,
+				77620E281360621600D40692 /* ClickableLabel.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
