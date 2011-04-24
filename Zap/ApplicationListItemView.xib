@@ -198,6 +198,22 @@
 					</object>
 					<int key="connectionID">34</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">clickDelegate</string>
+						<reference key="source" ref="486857497"/>
+						<reference key="destination" ref="364249477"/>
+					</object>
+					<int key="connectionID">35</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">clickDelegate</string>
+						<reference key="source" ref="278376026"/>
+						<reference key="destination" ref="364249477"/>
+					</object>
+					<int key="connectionID">36</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -231,10 +247,10 @@
 						<reference key="object" ref="364249477"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="278376026"/>
 							<reference ref="962089650"/>
 							<reference ref="878867795"/>
 							<reference ref="486857497"/>
+							<reference ref="278376026"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -359,7 +375,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">34</int>
+			<int key="maxID">36</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

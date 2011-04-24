@@ -25,11 +25,9 @@ class ApplicationListItemView < JAObjectListViewItem
     def drawRect(rect)
         super
         drawBackground
-        directory.clickDelegate = self
-        url.clickDelegate = self
         symlink.stringValue = application.symlink
-        directory.stringValue = application.directory
-        url.stringValue = "http://#{application.symlink}.dev/"
+        directory.stringValue = hyperlinkFromString(application.directory, withURL:NSURL.URLWithString("file://#{application.directory}"))
+        url.stringValue = hyperlinkFromString("http://#{application.symlink}.dev/", withURL:NSURL.URLWithString("http://#{application.symlink}.dev/"))
     end
 
     def gradient
@@ -71,5 +69,20 @@ class ApplicationListItemView < JAObjectListViewItem
         else
             open
         end
+    end
+
+    def hyperlinkFromString(inString, withURL:aURL)
+        attrString = NSMutableAttributedString.new.initWithString(inString)
+        range = NSMakeRange(0, attrString.length)
+        
+        attrString.beginEditing
+        attrString.addAttribute(NSForegroundColorAttributeName, value:NSColor.blueColor, range:range)
+        attrString.addAttribute(NSUnderlineStyleAttributeName, value:NSNumber.numberWithInt(NSSingleUnderlineStyle), range:range)
+        #The next two attributes don't appear to work in MacRuby or I am dumb
+        attrString.addAttribute(NSLinkAttributeName, value:aURL, range:range)
+        attrString.addAttribute(NSCursorAttributeName, value:NSCursor.pointingHandCursor, range:range)
+        
+        attrString.endEditing
+        attrString
     end
 end
