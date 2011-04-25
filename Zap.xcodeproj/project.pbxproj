@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		77620E281360621600D40692 /* ClickableLabel.rb in Resources */ = {isa = PBXBuildFile; fileRef = 77620E271360621600D40692 /* ClickableLabel.rb */; };
 		779CC7C61365184900369B45 /* 187-pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 779CC7C51365184900369B45 /* 187-pencil.png */; };
+		779CC7C813652A9800369B45 /* NSTextFieldMixin.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779CC7C713652A9800369B45 /* NSTextFieldMixin.rb */; };
 		779D33A6135BA5C100FE515D /* MainViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33A5135BA5C100FE515D /* MainViewController.rb */; };
 		779D33A8135BA6CA00FE515D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 779D33A7135BA6CA00FE515D /* MainViewController.xib */; };
 		779D33AE135BDFBC00FE515D /* AppState.rb in Resources */ = {isa = PBXBuildFile; fileRef = 779D33AD135BDFBC00FE515D /* AppState.rb */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		77620E271360621600D40692 /* ClickableLabel.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ClickableLabel.rb; sourceTree = "<group>"; };
 		779CC7C51365184900369B45 /* 187-pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "187-pencil.png"; sourceTree = "<group>"; };
+		779CC7C713652A9800369B45 /* NSTextFieldMixin.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = NSTextFieldMixin.rb; sourceTree = "<group>"; };
 		779D33A5135BA5C100FE515D /* MainViewController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = MainViewController.rb; sourceTree = "<group>"; };
 		779D33A7135BA6CA00FE515D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		779D33AD135BDFBC00FE515D /* AppState.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AppState.rb; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				779D33B2135BEB0600FE515D /* NSViewMixin.rb */,
+				779CC7C713652A9800369B45 /* NSTextFieldMixin.rb */,
 			);
 			name = Mixin;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				77D91A67135E99A700CDD4CC /* ApplicationListHeaderView.xib in Resources */,
 				77620E281360621600D40692 /* ClickableLabel.rb in Resources */,
 				779CC7C61365184900369B45 /* 187-pencil.png in Resources */,
+				779CC7C813652A9800369B45 /* NSTextFieldMixin.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 
 class ApplicationListItemView < JAObjectListViewItem
-    attr_accessor :gradient, :application, :symlink, :directory, :url, :selected, :change_link_name_field
+    attr_accessor :gradient, :application, :symlink, :directory, :url, :selected, :edit_button, :change_link_name_field
     
     @@nib = nil
     
@@ -26,8 +26,10 @@ class ApplicationListItemView < JAObjectListViewItem
         super
         drawBackground
         symlink.stringValue = application.symlink
+        edit_button.left = symlink.stringValue.sizeWithAttributes({NSFontAttributeName => symlink.font}).width + 15
         directory.stringValue = hyperlinkFromString(application.directory, withURL:NSURL.URLWithString("file://#{application.directory}"))
         url.stringValue = hyperlinkFromString("http://#{application.symlink}.dev/", withURL:NSURL.URLWithString("http://#{application.symlink}.dev/"))
+        [symlink, directory, url].each {|field| field.setWidthBasedOnCurrentFont}
     end
 
     def gradient

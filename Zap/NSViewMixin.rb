@@ -9,7 +9,19 @@
 
 module SizeMixin
     def bottom
-       frame.size.height + frame.origin.y 
+        frame.size.height + frame.origin.y 
+    end
+    
+    def left=(att)
+        new_frame = frame
+        new_frame.origin.x = att
+        self.frame = new_frame
+    end
+    
+    def width=(att)
+        new_frame = frame
+        new_frame.size.width = att
+        self.frame = new_frame
     end
 end
 

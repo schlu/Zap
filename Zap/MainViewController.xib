@@ -57,14 +57,14 @@
 									<object class="NSCustomView" id="1040990600">
 										<reference key="NSNextResponder" ref="996189607"/>
 										<int key="NSvFlags">274</int>
-										<string key="NSFrameSize">{480, 272}</string>
+										<string key="NSFrameSize">{346, 272}</string>
 										<reference key="NSSuperview" ref="996189607"/>
 										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="10555188"/>
 										<string key="NSClassName">JAListView</string>
 									</object>
 								</object>
-								<string key="NSFrameSize">{480, 272}</string>
+								<string key="NSFrameSize">{346, 272}</string>
 								<reference key="NSSuperview" ref="80602876"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="1040990600"/>
@@ -98,14 +98,13 @@
 								<string key="NSFrame">{{1, 491}, {371, 15}}</string>
 								<reference key="NSSuperview" ref="80602876"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<int key="NSsFlags">1</int>
 								<reference key="NSTarget" ref="80602876"/>
 								<string key="NSAction">_doScroller:</string>
 								<double key="NSPercent">0.50602412223815918</double>
 							</object>
 						</object>
-						<string key="NSFrameSize">{480, 272}</string>
+						<string key="NSFrameSize">{346, 272}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="996189607"/>
@@ -115,7 +114,7 @@
 						<reference key="NSContentView" ref="996189607"/>
 					</object>
 				</object>
-				<string key="NSFrameSize">{480, 272}</string>
+				<string key="NSFrameSize">{346, 272}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="80602876"/>
