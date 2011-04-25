@@ -68,6 +68,7 @@ class ApplicationListItemView < JAObjectListViewItem
         change_link_name_field.stringValue = application.symlink
         alert.accessoryView = change_link_name_field
         if alert.runModal == NSAlertDefaultReturn
+            return if change_link_name_field.stringValue == application.symlink
             if change_link_name_field.stringValue.strip != ""
                 application.rename(change_link_name_field.stringValue.strip)
             else
