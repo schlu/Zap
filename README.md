@@ -9,6 +9,13 @@ Current features
 * Reveal in Finder
 * Open in Browser
 
+Download and Install
+--------------------
+
+[Latest Version](https://github.com/downloads/schlu/Zap/Zap_latest.zip)
+
+Unzip file and and drag Zap.app to your applications folder
+
 
 Roadmap
 -------
