@@ -30,6 +30,10 @@ All features on the road map have no deadlines. The best way to get a feature im
 * Add default management once [default](https://github.com/37signals/pow/commit/2dc556a9b9cbfa9b799d4d804f5f6a32cae78fd3) functionality gets built in
 * Implement Sensible Menu Bar
 
+This is a side project and any time I spend on it is time I am not doing client work (AKA getting paid). Please consider donating (time or money) if you use this application.
+
+<a href='http://www.pledgie.com/campaigns/15177'><img alt='Click here to lend your support to: Zap and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/15177.png?skin_name=chrome' border='0' /></a>
+
 License
 =======
 
