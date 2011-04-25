@@ -8,7 +8,7 @@
 
 
 class ApplicationListItemView < JAObjectListViewItem
-    attr_accessor :gradient, :application, :symlink, :directory, :url, :selected
+    attr_accessor :gradient, :application, :symlink, :directory, :url, :selected, :change_link_name_field
     
     @@nib = nil
     
@@ -62,7 +62,20 @@ class ApplicationListItemView < JAObjectListViewItem
         url = NSURL.URLWithString("http://#{application.symlink}.dev/")
         NSWorkspace.sharedWorkspace.openURL(url)
     end
-
+    
+    def edit_link(sender)
+        alert = NSAlert.alertWithMessageText("What do you want new name to be?", defaultButton:"OK", alternateButton:"Cancel", otherButton:nil, informativeTextWithFormat:"This change is permanent.")
+        change_link_name_field.stringValue = application.symlink
+        alert.accessoryView = change_link_name_field
+        if alert.runModal == NSAlertDefaultReturn
+            if change_link_name_field.stringValue.strip != ""
+                application.rename(change_link_name_field.stringValue.strip)
+            else
+                alert = NSAlert.alertWithMessageText("Name can't be blank?", defaultButton:"OK", alternateButton:"", otherButton:nil, informativeTextWithFormat:"")
+            end
+        end
+    end
+    
     def labelClicked(sender)
         if sender == directory
             reveal_in_finder

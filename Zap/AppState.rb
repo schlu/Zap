@@ -41,6 +41,11 @@ class AppState
         NSApplication.sharedApplication.delegate.reload_application
     end
     
+    def rename_application(application, new_name)
+        File.rename(File.join(@@pow_dir, application.symlink), File.join(@@pow_dir, new_name)) 
+        NSApplication.sharedApplication.delegate.reload_application
+    end
+    
     @@instance = self.new
     def self.instance
         @@instance

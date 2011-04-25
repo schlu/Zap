@@ -9,4 +9,8 @@
 
 class RackApplication
     attr_accessor :symlink, :directory
+    
+    def rename(new_name)
+        AppState.instance.rename_application(self, new_name)
+    end
 end
