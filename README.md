@@ -9,6 +9,8 @@ Current features
 * Reveal in Finder
 * Open in Browser
 
+![Screen Shot](https://img.skitch.com/20110425-r62w4j571cbbg139aauswi85ej.jpg)
+
 Download and Install
 --------------------
 
@@ -26,6 +28,7 @@ All features on the road map have no deadlines. The best way to get a feature im
 * Show ruby version and gemset
 * Show installed gems
 * Add default management once [default](https://github.com/37signals/pow/commit/2dc556a9b9cbfa9b799d4d804f5f6a32cae78fd3) functionality gets built in
+* Implement Sensible Menu Bar
 
 License
 =======
